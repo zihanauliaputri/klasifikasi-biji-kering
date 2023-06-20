@@ -42,7 +42,7 @@ std_data = scaler.transform(input_data_reshape)
 # membuat tombol untuk prediksi
 if st.button('Test'):
     drybean_prediction = model.predict(std_data)
-    if(drybean_prediction[0] == 1):
+    if(drybean_prediction[0] == 0):
         prediction = 'Biji kering tersebut termasuk kedalam kategori Seker'
     elif (drybean_prediction[0] == 1):
         prediction = 'Biji kering tersebut termasuk kedalam kategori Barbunya'
